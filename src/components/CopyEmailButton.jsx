@@ -14,7 +14,7 @@ const CopyEmailButton = () => {
 
   return (
     <button className="relative px-1 py-4 text-sm text-center
-    rounded-full font-extralight bg-primary w-[12rem] cursor-pointer overflow-hidden"
+    rounded-full font-extralight text-white bg-neutral-600 w-[12rem] cursor-pointer overflow-hidden"
     onClick={handleCopyEmail}
     >   
         

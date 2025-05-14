@@ -47,7 +47,7 @@ function HeroText() {
                 animate="visible"
                 transition={{delay:0.8}}
                 >
-                    Web Solutions
+                    Solutions
                 </motion.p>
                 
             </div>
@@ -85,7 +85,7 @@ function HeroText() {
                 animate="visible"
                 transition={{delay:0.8}}
                 >
-                    Web Applications
+                    Applications
                 </motion.p>
             </div>
         </div>

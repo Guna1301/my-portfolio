@@ -25,25 +25,27 @@ const ProjectDetails = ({title,description, subDiscription, image,tags,href,clos
                 ))}
                 <div className="flex items-center justify-between mt-4">
                     <div className="flex gap-3">
+                        
                         {
-                            tags.map((tag)=>{
+                            tags.map((tag)=>(
                                 <img 
                                     key={tag.id} 
                                     src={tag.path} 
                                     alt={tag.name}
-                                    className="rounded-lg size-10 hover-animation"
+                                    className="rounded-lg size-7 hover-animation"
                                 
                                 />
-                            })
+                            ))
                         }
                     </div>
-                    <a className="inline-flex items-center gap-1 font-medium cursor-pointer hover-animation">
+                    <a className="inline-flex items-center gap-1 font-medium cursor-pointer hover-animation"
+                        href={href}
+                    >
                         View Project
                         <img 
                             src="assets/arrow-up.svg" 
                             alt="arrow" 
                             className="size-4"
-                            href={href}
                         />
                     </a>
                 </div>

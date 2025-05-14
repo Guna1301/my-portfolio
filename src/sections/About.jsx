@@ -3,6 +3,54 @@ import Card from "../components/Card"
 import { Globe } from "../components/Globe";
 import CopyEmailButton from "../components/CopyEmailButton";
 import FrameWorks from "../components/FrameWorks";
+import { Tabs } from "../components/Tabs";
+
+const techTabs = [
+  {
+    title: "Languages",
+    value: "languages",
+    content: (
+      <div className="p-4">
+        <ul>
+          <li>JavaScript</li>
+          <li>Java</li>
+          <li>Python</li>
+          <li>TypeScript</li>
+        </ul>
+      </div>
+    ),
+  },
+  {
+    title: "Frameworks",
+    value: "frameworks",
+    content: (
+      <div className="p-4">
+        <ul>
+          <li>React</li>
+          <li>Node.js</li>
+          <li>Express</li>
+          <li>Flask</li>
+        </ul>
+      </div>
+    ),
+  },
+  {
+    title: "Tools",
+    value: "tools",
+    content: (
+      <div className="p-4">
+        <ul>
+          <li>Git</li>
+          <li>Docker</li>
+          <li>AWS</li>
+          <li>MongoDB</li>
+        </ul>
+      </div>
+    ),
+  },
+];
+
+
 
 const About = () => {
     const grid2Container = useRef();
@@ -39,30 +87,44 @@ const About = () => {
                     <p className="flex items-end text-5xl text-gray-500">
                         CODE IS CRAFT
                     </p>
-                    <Card 
-                        style={{rotate:"70deg",top:"30%",left:"20%"}} 
-                        text="GRASP" 
-                        containerRef={grid2Container}
-                    />
                     <Card
                         style={{rotate:"-30deg",top:"60%",left:"45%"}}
-                        text="SOLID"
+                        text="OOPS"
                         containerRef={grid2Container}
                     />
                     <Card 
-                        style={{rotate:"90deg",top:"40%",left:"70%"}}
-                        text="Design Patterns" 
+                        style={{rotate:"50deg",top:"40%",left:"70%"}}
+                        text="Problem Solving" 
                         containerRef={grid2Container}
                     /> 
                     <Card
-                        style={{rotate:"-45deg",top:"55%",left:"0%"}} 
-                        text="Design Principles"
+                        style={{rotate:"-45deg",top:"12%",left:"5%"}} 
+                        text="DSA"
                         containerRef={grid2Container}
                     />
-                    TODO: add images
                     <Card
-                        style={{rotate:"-5deg",top:"55%",left:"0%"}} 
-                        image={"/assets/logos/"}
+                        style={{rotate:"-5deg",top:"70%",left:"10%"}} 
+                        image={"/assets/logos/socket-dot-io.svg"}
+                        containerRef={grid2Container}
+                    />
+                    <Card
+                        style={{rotate:"-10deg",top:"10%",left:"85%"}} 
+                        image={"/assets/logos/react.svg"}
+                        containerRef={grid2Container}
+                    />
+                    <Card
+                        style={{rotate:"-5deg",top:"70%",left:"70%"}} 
+                        image={"/assets/logos/vitejs.svg"}
+                        containerRef={grid2Container}
+                    />
+                    <Card
+                        style={{rotate:"-5deg",top:"10%",left:"40%"}} 
+                        image={"/assets/logos/git.svg"}
+                        containerRef={grid2Container}
+                    />
+                    <Card
+                        style={{rotate:"0deg",top:"65%",left:"30%"}} 
+                        image={"/assets/logos/aws.svg"}
                         containerRef={grid2Container}
                     />
                 </div>
@@ -86,24 +148,31 @@ const About = () => {
                 <div className="flex flex-col items-center justify-center gap-4
                 size-full">
                     <p className="text-center headtext">
-                        Do you want to start a project together?
+                        Feel free to get in touch or download my resume to learn more about my background.
                     </p>
-                    <CopyEmailButton/>
+                    <a
+                    href="https://drive.google.com/file/d/1nZyFfUfmNT2iWD5Uu5V4e90OYKELdzVl/view?usp=sharing"
+                    download
+                    className="flex flex-row items-center gap-2 px-6 py-4 text-sm text-white text-center 
+                                bg-gradient-to-r bg-primary rounded-4xl cursor-pointer hover-animation w-fit"
+                    >
+                        <img src="/assets/download.svg" alt="Download" className="size-6" />
+                        Resume
+                    </a>
                 </div>
-            </div>
+            </div> 
             {/* grid 5 */}
             <div className="grid-default-color grid-5">
                 <div className="z-10 w-[50%]">
                     <p className="headtext">
                         Tech Stack
                     </p>
-                    <p className="subtext">
-                        I have experience in a variety of technologies, including React, Node.js, and more.
-                        I'm always eager to learn new skills and improve my craft.
-                    </p>
+                    
+                    <Tabs tabs={techTabs} />
+
                 </div>
                 <div className="absolute inset-y-0 md:inset-y-9 w-full h-full
-                start-[50%] md:scale-125">
+                start-[60%] md:scale-125">
                     <FrameWorks/> 
                 </div>
             </div>

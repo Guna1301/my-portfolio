@@ -7,14 +7,7 @@ const Footer = () => {
 
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
         <div className="flex flex-col gap-3">
-          <span className="text-lg font-semibold text-neutral-200">Guna Sai</span>
-          <a
-            href="/GunaSai_Resume.pdf"
-            download
-            className="px-3 py-2 text-sm text-white text-center bg-gradient-to-r from-lavender to-royal rounded-md cursor-pointer hover-animation w-fit"
-          >
-            Download Resume
-          </a>
+          
         </div>
 
         <div className="flex flex-col items-start sm:items-end gap-2">
@@ -26,6 +19,17 @@ const Footer = () => {
             ))}
           </div>
           <p>© 2025 Guna Sai. All rights reserved</p>
+          <p>
+            Icons from{' '} 
+            <a
+              href="https://icons8.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-white"
+            >
+              Icons8
+            </a>
+          </p>
         </div>
       </div>
     </section>

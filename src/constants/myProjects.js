@@ -1,21 +1,109 @@
 export const myProjects = [
   {
     id: 1,
+    title: "Git-easy",
+    description:
+      "A user-friendly GitHub dashboard that lets users search repositories and profiles, with secure GitHub login using Passport.js.",
+    subDescription: [
+      "Implemented GitHub authentication using Passport.js and OAuth strategy.",
+      "Utilized the GitHub API to fetch and display repositories, users, and profiles with real-time search.",
+      "Built a responsive and fast frontend using React.js, Vite, and Tailwind CSS.",
+      "Designed a clean, intuitive UI for easier repository and user exploration.",
+      "Used Node.js and Express.js for backend API routing and integration."
+    ],
+    href: "https://git-easy-1-0.onrender.com",
+    logo: "",
+    image: "/assets/projects/git-easy.png",
+    tags: [
+      {
+        id: 1,
+        name: "React",
+        path: "/assets/logos/react.svg"
+      },
+      {
+        id: 2,
+        name: "Node.js",
+        path: "/assets/logos/nodejs.svg"
+      },
+      {
+        id: 3,
+        name: "Passport.js",
+        path: "/assets/logos/oauth.svg"
+      },
+      {
+        id: 4,
+        name: "GitHub API",
+        path: "/assets/logos/github.svg"
+      },
+      {
+        id: 5,
+        name: "TailwindCSS",
+        path: "/assets/logos/tailwindcss.svg"
+      },
+      {
+        id: 6,
+        name: "Vite",
+        path: "/assets/logos/vitejs.svg"
+      }
+    ]
+  },{
+    id: 3,
+    title: "My-music",
+    description:
+      "A modern music streaming web application with real-time features, built for seamless user experience and admin control.",
+    subDescription: [
+      "Implemented real-time chat and music sync features using Socket.io.",
+      "Developed an interactive frontend using ReactJS, Vite, and Tailwind CSS.",
+      "Integrated Clerk for secure user authentication and Google login support.",
+      "Created an admin dashboard to manage users and music content.",
+      "Built a scalable backend with Node.js and Express."
+    ],
+    href: "", 
+    logo: "", 
+    image: "/assets/projects/my-music.png",
+    tags: [
+      {
+        id: 1,
+        name: "React",
+        path: "/assets/logos/react.svg"
+      },
+      {
+        id: 2,
+        name: "TailwindCSS",
+        path: "/assets/logos/tailwindcss.svg"
+      },
+      {
+        id: 3,
+        name: "Socket.io",
+        path: "/assets/logos/socket-dot-io.svg"
+      },
+      {
+        id: 4,
+        name: "Node.js",
+        path: "/assets/logos/nodejs.svg"
+      },
+      {
+        id: 5,
+        name: "Clerk",
+        path: "/assets/logos/clerk.svg" 
+      }
+    ]
+  },{
+    id: 2,
     title: "Cognitive Retraining Application",
     description: "An educational platform designed to assist children with autism and dyslexia by offering cognitive games and personalized exercises.",
     subDescription: [
       "Developed personalized cognitive games and assessment modules using ReactJS and machine learning models (SVM Regression) to support children with autism and dyslexia.",
       "Implemented secure JWT-based user authentication and progress tracking.",
       "Designed a responsive and accessible user interface using Bootstrap to ensure usability for children.",
-      "Integrated adaptive learning logic that modifies cognitive exercises based on user performance and survey outcomes."
     ],
-    href: "",
+    href: "https://final-ps.vercel.app/",
     logo: "",
-    image: "/assets/projects/cognitive.jpg",
+    image: "/assets/projects/cognitive.png",
     tags: [
       {
         id: 1,
-        name: "ReactJS",
+        name: "React",
         path: "/assets/logos/react.svg"
       },
       {
@@ -35,84 +123,11 @@ export const myProjects = [
       },
       {
         id: 5,
-        name: "SVM Regression",
-        path: "/assets/logos/ml.svg"
+        name: "SVM & Regression",
+        path: "/assets/logos/ai-file-26.png"
       }
     ]
   },
+  
 
-  {
-    id: 2,
-    title: "Authentication & Authorization System",
-    description:
-      "A secure authentication and authorization system using Auth0 for seamless user management.",
-    subDescription: [
-      "Integrated Auth0 for authentication, supporting OAuth, JWT, and multi-factor authentication.",
-      "Implemented role-based access control (RBAC) for fine-grained user permissions.",
-      "Developed a React-based frontend with Tailwind CSS for a sleek user experience.",
-      "Connected to a secure SQLite database for user data storage.",
-    ],
-    href: "",
-    logo: "",
-    image: "/assets/projects/auth-system.jpg",
-    tags: [
-      {
-        id: 1,
-        name: "Auth0",
-        path: "/assets/logos/auth0.svg",
-      },
-      {
-        id: 2,
-        name: "React",
-        path: "/assets/logos/react.svg",
-      },
-      {
-        id: 3,
-        name: "SQLite",
-        path: "/assets/logos/sqlite.svg",
-      },
-      {
-        id: 4,
-        name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
-      },
-    ],
-  },
-  {
-    id: 3,
-    title: "Blazor Web App",
-    description:
-      "A modern, interactive web application built with Blazor WebAssembly and .NET Core.",
-    subDescription: [
-      "Developed a fully interactive Single Page Application (SPA) using Blazor WebAssembly.",
-      "Implemented API interactions using .NET Core for a robust backend.",
-      "Designed responsive UI components with Tailwind CSS for an enhanced UX.",
-      "Integrated SQLite for efficient client-side database storage.",
-    ],
-    href: "",
-    logo: "",
-    image: "/assets/projects/blazor-app.jpg",
-    tags: [
-      {
-        id: 1,
-        name: "Blazor",
-        path: "/assets/logos/blazor.svg",
-      },
-      {
-        id: 2,
-        name: ".NET Core",
-        path: "/assets/logos/dotnetcore.svg",
-      },
-      {
-        id: 3,
-        name: "SQLite",
-        path: "/assets/logos/sqlite.svg",
-      },
-      {
-        id: 4,
-        name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
-      },
-    ],
-  },
 ];
