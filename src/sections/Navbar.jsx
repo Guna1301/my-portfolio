@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { useState } from "react";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 function Navigation() {
   return (
     <ul className="nav-ul">
@@ -30,7 +30,7 @@ function Navigation() {
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="fixed inset-x-0 z-20 w-full backdrop-blur-3xl">
+    <div className="fixed inset-x-0 z-20 w-[100vw] backdrop-blur-3xl bg-primary/40">
       <div className="mx-auto c-space max-w-7xl">
         <div className="flex items-center justify-between py-2 sm:py-0">
           <a

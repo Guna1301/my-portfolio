@@ -67,7 +67,7 @@ const Contact = () => {
   
 
   return (
-    <section className="relative felx items-center c-space
+    <section id="contact" className="relative felx items-center c-space pt-24
     section-spacing">
       <Particles
         className="absolute inset-0 -z-60"

@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import { useState } from "react";
 import Project from "../components/Project"
-import { myProjects } from "../constants"
+import { myProjects } from "../constants/myProjects"
 import { motion, useMotionValue, useSpring } from "framer-motion"
 
 const Projects = () => {
@@ -17,7 +17,7 @@ const Projects = () => {
   const [preview, setPreview] = useState(null)
 
   return (
-    <section onMouseMove={handleMouseMove} className="relative c-space section-spacing">
+    <section id="work" onMouseMove={handleMouseMove} className="relative c-space section-spacing pt-24">
         <h2 className="text-heading">My Projects</h2>
         <div className="bg-gradient-to-r from-transparent via-neutral-700 to-transparent mt-12 h-[1px] w-full"/>
           {

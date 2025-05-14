@@ -1,34 +1,39 @@
-import React, { Suspense } from 'react'
+/* eslint-disable no-unused-vars */
 import HeroText from '../components/HeroText'
 import ParallaxBackground from '../components/ParallaxBackground'
-import Astronaut from '../components/Astronaut'
-import { Canvas } from '@react-three/fiber'
-import { Float, OrbitControls } from '@react-three/drei'
 import { useMediaQuery } from 'react-responsive'
-import Loader from '../components/Loader'
+import {motion} from 'framer-motion'
 
 function Hero() {
   const isMobile = useMediaQuery({maxWidth:853})
   return (
-    <section className='flex items-start justify-center md:items-start 
+    <section id='home' className='flex items-start justify-center md:items-start 
     md:justify-start min-h-screen overflow-hidden c-space'>
         <HeroText/>
         <ParallaxBackground/>
-        <figure className='absolute inset-0'
-            style={{width:"100vw", height:"100vh"}}
-        >
-            <Canvas camera={{position:[0,1,3]}}>
-              <Suspense fallback={<Loader/>}> 
-                <Float>
-                    <Astronaut 
-                    scale={isMobile && 0.23} 
-                    position={isMobile && [0,-1.5,0]}
-                  />
-                </Float>
-              </Suspense>
-            </Canvas>
-          
+        <figure className='absolute inset-0 pointer-events-none '>
+          {!isMobile && <motion.img
+            src='/assets/Astronaut-rafiki (2).svg'
+            alt='Astronaut'
+            className={`absolute rotate-[290deg]`}
+            initial={{ y: -10 }}
+            animate={{ y: 10 }}
+            transition={{
+              repeat: Infinity,
+              repeatType: 'reverse',
+              duration: 2,
+              ease: 'easeInOut' 
+            }}
+            style={{
+              width:'100vw',
+              height:'100vh',
+              top: '5%',
+              left:'20%',
+            }}
+          />}
         </figure>
+
+        
     </section>
   )
 }
