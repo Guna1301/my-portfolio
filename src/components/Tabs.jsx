@@ -18,7 +18,7 @@ export const Tabs = ({
     <>
       <div
         className={twMerge(
-          "flex flex-row items-center justify-start gap-2", 
+          "flex flex-row  items-center justify-start gap-4", 
           containerClassName
         )}>
         {propTabs.map((tab) => (

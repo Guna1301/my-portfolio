@@ -4,6 +4,7 @@ import { Globe } from "../components/Globe";
 import CopyEmailButton from "../components/CopyEmailButton";
 import FrameWorks from "../components/FrameWorks";
 import { Tabs } from "../components/Tabs";
+import { useMediaQuery } from "react-responsive";
 
 const techTabs = [
   {
@@ -54,6 +55,8 @@ const techTabs = [
 
 const About = () => {
     const grid2Container = useRef();
+    const isMobile = useMediaQuery({maxWidth:712})
+
   return (
     <section id="about" className="c-space section-spacing pt-24">
         <h2 className="text-heading">About Me</h2>
@@ -160,9 +163,9 @@ const About = () => {
                         Resume
                     </a>
                 </div>
-            </div> 
+            </div>
             {/* grid 5 */}
-            <div className="grid-default-color grid-5">
+            <div className="grid-default-color grid-5 grid-cols-1 md:grid-cols-2">
                 <div className="z-10 w-[50%]">
                     <p className="headtext">
                         Tech Stack
@@ -171,10 +174,10 @@ const About = () => {
                     <Tabs tabs={techTabs} />
 
                 </div>
-                <div className="absolute inset-y-0 md:inset-y-9 w-full h-full
-                start-[60%] md:scale-125">
+                {!isMobile && <div className="absolute inset-y-0 md:inset-y-9 w-full h-full
+                start-[60%] md:scale-125 md:block">
                     <FrameWorks/> 
-                </div>
+                </div>}
             </div>
         </div>
     </section>
