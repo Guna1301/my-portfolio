@@ -154,7 +154,8 @@ const About = () => {
                         Feel free to get in touch or download my resume to learn more about my background.
                     </p>
                     <a
-                    href="https://drive.google.com/file/d/1nZyFfUfmNT2iWD5Uu5V4e90OYKELdzVl/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1hs355rSr1qVnE1_H8NPH9YvL3wlAP4Dw/view?usp=sharing"
+                    
                     download
                     className="flex flex-row items-center gap-2 px-6 py-4 text-sm text-white text-center 
                                 bg-gradient-to-r bg-primary rounded-4xl cursor-pointer hover-animation w-fit"

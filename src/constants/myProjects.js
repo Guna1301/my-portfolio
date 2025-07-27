@@ -58,9 +58,9 @@ export const myProjects = [
       "Created an admin dashboard to manage users and music content.",
       "Built a scalable backend with Node.js and Express."
     ],
-    href: "", 
+    href: "https://my-music-v1.vercel.app", 
     logo: "", 
-    image: "/assets/projects/my-music.png",
+    image: "/assets/projects/my-music-1.png",
     tags: [
       {
         id: 1,
@@ -97,7 +97,7 @@ export const myProjects = [
       "Implemented secure JWT-based user authentication and progress tracking.",
       "Designed a responsive and accessible user interface using Bootstrap to ensure usability for children.",
     ],
-    href: "https://final-ps.vercel.app/",
+    href: "https://cognitive-omega.vercel.app",
     logo: "",
     image: "/assets/projects/cognitive.png",
     tags: [
