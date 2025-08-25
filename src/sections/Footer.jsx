@@ -18,18 +18,8 @@ const Footer = () => {
               </a>
             ))}
           </div>
-          <p>© 2025 Guna Sai. All rights reserved</p>
-          <p>
-            Icons from{' '} 
-            <a
-              href="https://icons8.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline hover:text-white"
-            >
-              Icons8
-            </a>
-          </p>
+          <p>© 2025 Guna Sai - Crafting code & ideas</p>
+
         </div>
       </div>
     </section>

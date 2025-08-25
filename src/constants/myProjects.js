@@ -1,4 +1,47 @@
 export const myProjects = [
+    {
+    "id": 4,
+    "title": "Conlea",
+    "description": "A modern language exchange and social platform with real-time communication features, built for seamless global conversations and community building.",
+    "subDescription": [
+      "Implemented real-time chat and video calling using Stream APIs.",
+      "Integrated TanStack Query and Zustand for efficient state management and authentication.",
+      "Developed an interactive and responsive frontend with React, Vite, and Tailwind CSS.",
+      "Built scalable backend services with Node.js and Express for handling user data and sessions.",
+      "Designed with focus on reliability, user experience, and global scalability."
+    ],
+    "href": "https://conlea.vercel.app",
+    "logo": "",
+    "image": "/assets/projects/conlea.png",
+    "tags": [
+      {
+        "id": 1,
+        "name": "React",
+        "path": "/assets/logos/react.svg"
+      },
+      {
+        "id": 2,
+        "name": "TailwindCSS",
+        "path": "/assets/logos/tailwindcss.svg"
+      },
+      {
+        "id": 4,
+        "name": "Zustand",
+        "path": "/assets/logos/zustabd.svg"
+      },
+      {
+        "id": 5,
+        "name": "Stream",
+        "path": "/assets/logos/stream.jpeg"
+      },
+      {
+        "id": 6,
+        "name": "Node.js",
+        "path": "/assets/logos/nodejs.svg"
+      }
+    ]
+  },
+
   {
     id: 1,
     title: "Git-easy",
